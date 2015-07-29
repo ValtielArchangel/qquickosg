@@ -5,6 +5,7 @@ Tested with Qt 5.4 on Windows, Linux, Android, iOS
 
 Very simple to use:
 
+```c++
 class TestRenderer : public QQuickOsgItem::Renderer
 {
     void createScene() override
@@ -25,5 +26,5 @@ public:
     OsgItemTest() { setAcceptedMouseButtons( Qt::AllButtons ); }
     QQuickOsgItem::Renderer * createRenderer() const override { return new TestRenderer(); }
 };
-
+```
 
