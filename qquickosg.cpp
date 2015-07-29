@@ -91,8 +91,6 @@ public slots:
 
             markDirty( QSGNode::DirtyMaterial );
             emit textureChanged();
-
-            scheduleRender();
         }
     }
 

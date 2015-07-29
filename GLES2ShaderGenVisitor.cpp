@@ -23,7 +23,6 @@
 #include <osg/Material>
 #include <sstream>
 
-#ifndef WIN32
 #define SHADER_COMPAT \
 "#ifndef GL_ES\n" \
 "#if (__VERSION__ <= 110)\n" \
@@ -32,9 +31,6 @@
 "#define highp\n" \
 "#endif\n" \
 "#endif\n"
-#else
-#define SHADER_COMPAT ""
-#endif
 
 
 using namespace osgUtil;
