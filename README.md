@@ -27,4 +27,5 @@ public:
     QQuickOsgItem::Renderer * createRenderer() const override { return new TestRenderer(); }
 };
 ```
+![alt text](https://github.com/sparadon/qquickosg/raw/master/screen.png "Result")
 
